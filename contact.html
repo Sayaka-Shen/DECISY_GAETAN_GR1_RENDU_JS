@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/formulaire.css">
+    <title>Rent your car | Contact</title>
+</head>
+<body>
+    <header>
+        <div class="containerLogoNav">
+            <h1>Rent Your Car</h1>
+
+            <nav>
+                <ul>
+                    <li class="closeMark"><i class="fa-solid fa-xmark"></i></li>
+                    <li><a href="/">Accueil</a></li>
+                    <li><a href="./aPropos.html">A propos</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./signup.html">Sign Up</a></li>
+                </ul>
+            </nav>
+
+            <div class="menuHamburger"><i class="fa-solid fa-bars"></i></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="contactForm">
+            <div class="buttonDarkMode">Dark Mode</div>
+            
+            <div class="message-error">
+                <ul></ul>
+            </div>
+            
+            <div class="message-success">
+                Formulaire Envoyé
+            </div>      
+
+            <h2>Contactez Nous</h2>
+            <form action="" method="POST" enctype="multipart/form-data">
+                <div>
+                    <input type="text" placeholder="Nom" id="nom">
+                </div>
+                <div>
+                    <input type="text" placeholder="Prénom" id="prenom">
+                </div>
+                <div>
+                    <input type="text" placeholder="Adresse Email" id="email">
+                </div>
+                <div>
+                   <textarea rows="10" placeholder="Vos problèmes" id="problem"></textarea> 
+                </div>         
+                <button type="submit">Envoyer le problème</button>  
+            </form>  
+        </section>
+    </main>
+
+    <footer>
+        <div class="socialMedia">
+            <div class="media"><i class="fa-brands fa-x-twitter"></i> Twitter</div>
+            <div class="media"><i class="fa-brands fa-instagram"></i> Instagram</div>
+            <div class="media"><i class="fa-brands fa-linkedin"></i> LinkedIn</div>
+        </div>
+
+        <div class="contactFooter">
+            <div class="contact">0653679823</div>
+            <div class="contact">company.pedro@hotmail.fr</div>
+            <div class="contact">
+                <div class="buttonFooter"><a href="./contact.html">Contact</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/formulaire.js"></script>
+</body>
+</html>

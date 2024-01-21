@@ -1,0 +1,385 @@
+/* Importation de la police poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Reset css */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Mode mobile Header */
+header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 70%;
+
+    height: 60vh;
+    
+    position: relative;
+
+    transition: background-image 2s;
+}
+
+header:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    background: rgba(0, 0, 0, 0.3);
+    pointer-events: none;
+}
+
+.containerLogoNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1.5em;
+    
+    color: white;
+
+    position: relative;
+    z-index: 2;
+}
+
+header h1 {
+    font-size: 1.8em;
+    font-weight: 400;
+}
+
+header ul {
+    display: none;
+    flex-direction: column;
+    
+    background-color: #313b52;
+
+    height: 100vh;
+    width: 50%;
+    padding: 1em;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 3;
+}
+
+header li {
+    padding: 1em;
+}
+
+header li:first-child {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.5em;
+
+    cursor: pointer;
+}
+
+header ul a {
+    color: white;
+}
+
+.menuHamburger {
+    font-size: 2em;
+    display: block;
+
+    cursor: pointer;
+}
+
+/* Mobile first de la section d'achat */
+.achat {
+    width: 80%;
+    margin: 4em auto;
+}
+
+.achat h2 {
+    margin: 2em 0 1em 0;
+}
+
+.card {
+    width: 80%;
+    margin: 2em .5em;
+}
+
+.carImages {
+    width: 100%;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin: 1em 0;
+}
+
+.card p {
+    display: none;
+}
+
+.buttonProduct {
+    width: fit-content;
+    background-color: #313b52;
+    padding: .5em 1.5em;
+    border-radius: 10px;
+}
+
+.buttonProduct a {
+    color: white;
+}
+
+/* Mobile first de la section Qui sommes nous ? */
+.presentation {
+    width: 90%;
+    margin: 3em auto;
+}
+
+.presentation h2 {
+    margin-bottom: 1em;
+}
+
+.presentation p {
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+/* Mobile first de la section des fondateurs */
+.fondateurSection {
+    background-color: #313b52;
+    color: white;
+
+    padding: 2em;
+}
+
+.fondateurs {
+    display: flex;
+    margin: 2em 0;
+    font-size: .9em;
+}
+
+.fondateurImg {
+    width: 60%;
+    margin-right: 1em;
+    cursor: pointer;
+}
+
+.fondateurImg img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Mobile first section contact pour accéder à contact */
+.contactSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: gray;
+    height: 5vh;
+
+    padding: 1em;
+    text-align: center;
+}
+
+.contactSection p {
+    color: white;
+}
+
+.contactSection a {
+    text-decoration: underline;
+    color: white;
+}
+
+
+/* mobile first footer */
+footer {
+    background-color: #1d2331;
+    color: white;
+
+    padding: 4em 3em;
+    font-size: 1.2em;
+}
+
+footer .socialMedia {
+    margin-bottom: 2em;
+}
+
+footer .media {
+    padding: .2em 0;
+}
+
+footer .contact {
+    padding: .2em 0;
+}
+
+footer .buttonFooter {
+    border: 1px solid white;
+    width: fit-content;
+    padding: .5em 1em;
+    margin-top: .5em;
+    border-radius: 10px;
+}
+
+footer .buttonFooter a {
+    color: white;
+}
+
+/* Bouton DarkMode */
+.buttonDarkMode {
+    width: fit-content;
+
+    background-color: #313b52;
+    color: white;
+
+    padding: .5em 1em;
+    margin: 2rem 0;
+
+    cursor: pointer;
+}
+
+/* Media query Desktop */
+@media only screen and (min-width: 768px) {
+    /* Desktop header de la page */
+    header ul {
+        display: flex;
+        flex-direction: row;
+        
+        background: none;
+
+        position: inherit;
+        padding: 0;
+        height: auto;
+        width: auto;
+        z-index: inherit;
+    }
+    
+    header li {
+        padding: 0 1em;
+        font-size: 1.2em;
+    }
+
+    header li:first-child {
+        display: none;
+    }
+    
+    header a {
+        color: white;
+    }
+
+    .menuHamburger {
+        display: none;
+    }
+
+    /* Desktop section d'achat */
+    .achat {
+        width: 80%;
+        margin: 4em auto;
+    }
+    
+    .achat h2 {
+        margin: 2em 0 1em 0;
+    }
+
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .card {
+        width: 50%;
+        margin: 2em 0;
+    }
+    
+    .carImages {
+        width: 60%;
+    }
+    
+    .card p {
+        display: block;
+        margin-bottom: 1em;
+        width: 80%;
+    }
+
+    /* Desktop de la section presentation */
+    .presentation {
+        width: 70%;
+        margin: 5em auto;
+    }
+
+    /* Desktop de la section fondateur */
+    .fondateurSection {
+        padding: 5em 15%;
+    }
+
+    .fondateurs {
+        font-size: 1em;
+    }
+
+    .fondateurCard {
+        display: flex;
+        align-items: center;
+    }
+
+    .fondateurImg {
+        width: 30%;
+        margin-right: 1em;
+    }
+
+    .fondateurImg img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    /* Footer destop style */
+    footer {
+        background-color: #1d2331;
+        color: white;
+    
+        display: flex;
+        justify-content: space-around;
+    
+        padding: 5em;
+        font-size: 1.2em;
+    }
+}
+  
+/* Effet d'opacity */
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* class javascript toggle */
+.flex {
+    display: flex;
+}
+
+.none {
+    display: none;
+}
+
+.dark {
+    background-color: #12161e;
+    color: white !important;
+    border: 1px solid white;
+}

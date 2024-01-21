@@ -1,0 +1,64 @@
+/* Mobile first de la section contact */
+.contactForm {
+    width: 80%;
+    margin: 3em auto;
+}
+
+.contact h2 {
+    margin-bottom: 1em;
+}
+
+form div {
+    width: 80%;
+}
+
+form input, textarea {
+    width: 100%;
+    margin: 1em 0;
+    padding: 1em;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+
+
+button {
+    width: fit-content;
+    padding: .5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Gestion d'erreur */
+.message-error {
+    border: 1px solid rgba(212, 42, 0, 1);
+    color: rgb(212, 42, 0);
+    background-color: rgba(212, 42, 0, 0, 4);
+    padding: 16px 32px;
+    margin-bottom: 20px;
+    display: none;
+}
+  
+.message-error.visible {
+    display: block;
+}
+  
+.message-success {
+    border: 1px solid rgb(81, 150, 2);
+    color: rgb(81, 150, 2);
+    background-color: rgba(113, 212, 0, 0, 4);
+    padding: 16px 32px;
+    margin-bottom: 20px;
+    display: none;
+}
+  
+.message-success.visible {
+    display: block;
+}
+
+
+/* Desktop de la section contact */
+@media only screen and (min-width: 768px) {
+    .contactForm {
+        width: 70%;
+    }
+}
